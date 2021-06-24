@@ -10,6 +10,7 @@ body{
 .Navegacion{
     background: darkgrey;
     padding: 0 15px;
+    width: 100%;
 }
 .a_navegacion{
     color: white;
@@ -38,10 +39,47 @@ body{
     justify-content:space-evenly;
     align-items: center;
     
+    
 }
 .menu li a{
     display: block;
 }
+.logo{
+    flex: 1;
+}
 .item{
-    order: 1;
+    flex: 1;
+}
+/*Menu Tablet*/
+@media all and (min-width: 700px){
+    .menu{
+        justify-content: center;
+        justify-content: space-evenly;
+        width: auto;
+        position: relative; 
+        flex: 2;  
+    }
+    .logo{
+        flex: 1;
+    }
+    .item{
+        justify-content: center;
+        flex: 1;
+    }
+}
+/*Menu Desktop*/
+@media all and (min-width: 960px){
+    .item{
+        justify-content: center;
+        justify-content: space-evenly;
+        flex: 1;
+        order: 1;
+        display: block;
+        width: auto;
+        position: relative;
+        
+    }
+    .logo{
+        
+    }
 }

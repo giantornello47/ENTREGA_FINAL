@@ -1,0 +1,47 @@
+/*CSS del Proyecto*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.Navegacion{
+    background: darkgrey;
+    padding: 0 15px;
+}
+.a_navegacion{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    list-style-type: none;
+}
+.logo{
+    padding: 10px 10px 7px 0px;
+    
+}
+.item{
+    padding: 10px;
+    
+}
+.img_navegacion:hover{
+    transform: scale(1.5);
+}
+
+    
+/*Menu Moviles*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.menu li a{
+    display: block;
+}
+.item{
+    order: 1;
+}

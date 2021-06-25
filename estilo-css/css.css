@@ -1,4 +1,6 @@
 /*CSS del Proyecto*/
+/*General Menu*/
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -51,7 +53,7 @@ body{
     flex: 1;
 }
 /*Menu Tablet*/
-@media all and (min-width: 700px){
+@media only screen and (min-width: 700px){
     .menu{
         justify-content: center;
         justify-content: space-evenly;
@@ -68,7 +70,7 @@ body{
     }
 }
 /*Menu Desktop*/
-@media all and (min-width: 960px){
+@media only screen and (min-width: 960px){
     .item{
         justify-content: center;
         justify-content: space-evenly;
@@ -78,8 +80,81 @@ body{
         width: auto;
         position: relative;
         
+    } 
+}
+/*General Seccion Inicio*/
+.Inicio{
+    background-image: url(/imagenes/HOJASSSSS.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.nav-inicio{
+    justify-content: center;
+    position: relative;
+}
+.titulos-inicio{
+    color: black;
+    padding: 5px;
+    margin: auto;
+    font-weight: bolder;
+    text-decoration: underline double black;
+    text-align: center;
+}
+.imagen-inicio{
+  align-content: center;
+  margin: auto;
+  padding: 20px;
+}
+
+/*Inicio Moviles*/
+@media only screen and (max-width: 480px){
+.nav-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.nav-inicio h1 h2{
+    display:block;
+    
+}
+.titulos-inicio{
+    align-content: center;
+}
+.imagen-inicio{
+    width: 100%;
+}
+.img_inicio{
+    width:100%;
+}
+}
+/*Inicio Tablet*/
+@media only screen and (min-width: 481px) and (max-width:960px){
+.nav-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     }
-    .logo{
-        
+.titulos-inicio h1 h2{
+        flex-direction: column; 
+    }
+.imagen-inicio{
+    width:100%;
+}
+.img_inicio{
+    width:100%;
+}
+}
+/*Inicio Desktop*/
+@media only screen and (min-width: 961px){
+.nav-inicio{
+        }
+.titulos-inicio h1 h2{
+    flex-direction: column; 
+        }
+.imagen-inicio{
+    width:700px;
+    align-items: center;
     }
 }

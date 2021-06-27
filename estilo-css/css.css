@@ -219,10 +219,102 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
-/*Footer Tablet*/
+/*General Sobre Mi*/
+.seccion-sobremi{
+    background-image: url(/imagenes/HOJASSSSS.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas:
+    "div-sobremi div-textos";
+    grid-column-gap:10px;   
+}
+#div-textos{
+    grid-area: div-textos;
+    width:50%;
+    margin-top: 50px;
+}
+#div-sobremi{
+    grid-area: div-sobremi;
+    width: fit-content;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.textos-sobremi{
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    text-align:left;
+}
+.titulo-sobremi{
+    margin-top: 50px;
+    text-decoration: underline double black;
+    opacity: 100%;
+}
+.titulo-sobremi:hover{
+    background-color: dimgrey;
+}
+.subtitulo-sobremi{
+    text-decoration: underline double black
+}
+.subtitulo-sobremi:hover{
+    background-color: dimgrey;
+}
+.parrafo-sobremi{
+    letter-spacing: 1px;
+    font-size: large;  
+}
+.parrafo-sobremi:hover{
+    background-color: dimgrey;
+}
+/*Sobre Mi Moviles*/
+@media only screen and (max-width: 480px){
+    .seccion-sobremi{
+        display: grid;
+        grid-template-areas:
+        "div-sobremi"
+        "div-textos";
+    }
+    #div-sobremi{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .img-sobremi{
+        width:100%;
+    }
+    #div-textos{
+        width: 100%;
+        margin:auto;
+    }
+}
+/*Sobre Mi Tablet*/
 @media only screen and (min-width: 481px) and (max-width:960px){
-    footer{
-        height: 100vh;
+    .seccion-sobremi{
+        display: grid;
+        grid-template-areas:
+        "div-sobremi"
+        "div-textos";
+    }
+    #div-sobremi{
+        margin:auto;
+        padding-top: 50px;
+    }
+    #div-textos{
+        margin: auto;
+    }
+    .textos-sobremi{
+        text-align: center;
+    }       
+}
+/*Sobre Mi Desktop*/
+@media only screen and (min-width: 961px){
+    .seccion-sobremi{
+    display: grid;
+    grid-template-areas:
+    "div-sobremi div-textos";
+    grid-column-gap:10px;
     }
 }
 

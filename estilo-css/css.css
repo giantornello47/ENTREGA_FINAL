@@ -317,7 +317,99 @@ footer{
     grid-column-gap:10px;
     }
 }
+/*Seccion Porfolio*/
+.seccion-portfolio{
+    background-image: url(/imagenes/FondoHelecho2.jpg);
+    background-size: contain;
+}
+.container-portfolio{
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+}
+.container-portfolio ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+ul.slider-portfolio{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+  }
+  .slider-portfolio li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition:opacity .5s;
+}
+.slider-portfolio li img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+ .slider-portfolio li:first-child {
+    opacity: 1; 
+}
+.slider-portfolio li:target {
+    opacity: 1; 
+}
+.img-portfolio{
+    margin: auto;
+}
 
+.menu-portfolio{
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.menu-portfolio li a{
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline black 2px;
+  margin:auto
+}
+.menu-portfolio li{
+    border:black solid 2px;
+}
+.menu-portfolio li a:hover{
+    background-color: dimgrey;
+    font-size: large;
+}
+/*Portfolio Moviles*/
+@media only screen and (max-width: 480px){
+    .container-portfolio{
+        width: 100%;
+    }
+    ul.slider-portfolio{
+        width: 100%;
+        margin: auto;
+    }
+    .slider-portfolio li img{
+        width: 100%;
+        object-fit: contain;
+
+    }
+}
+/*Portfolio Tablet*/
+@media only screen and (min-width: 481px) and (max-width:960px){
+    .container-portfolio{
+        width: 100%;
+    }
+    ul.slider-portfolio{
+        width: 100%;
+        margin: auto;
+    }
+    .slider-portfolio li img{
+        width: 100%;
+        object-fit: contain;
+
+    }
+}
 
 
 

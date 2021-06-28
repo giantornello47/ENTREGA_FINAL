@@ -93,7 +93,7 @@ body{
     padding: 5px;
     margin: auto;
     font-weight: bolder;
-    text-decoration: underline double black;
+    text-decoration: underline solid black;
     text-align: center;    
 }
 .h1-titulo{
@@ -248,14 +248,14 @@ footer{
 }
 .titulo-sobremi{
     margin-top: 50px;
-    text-decoration: underline double black;
+    text-decoration: underline solid black;
     opacity: 100%;
 }
 .titulo-sobremi:hover{
     background-color: dimgrey;
 }
 .subtitulo-sobremi{
-    text-decoration: underline double black
+    text-decoration: underline solid black;
 }
 .subtitulo-sobremi:hover{
     background-color: dimgrey;
@@ -588,14 +588,14 @@ ul.slider-poemas{
   }
   .h2-contacto{
     color: #0e0e0e;
-    text-decoration: underline double black;
+    text-decoration: underline solid black;
     padding-bottom: 10px;
   }
   .h3-contacto{
     font-size: 16px; 
     padding-bottom: 30px;
     color: #0e0e0e;
-    text-decoration: underline double black;   
+    text-decoration: underline solid black;  
   }
   .formulario-contacto p{
     font-size: 14px; 

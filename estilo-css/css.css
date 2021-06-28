@@ -337,6 +337,7 @@ ul.slider-portfolio{
     width: 500px;
     height: 600px;
     margin: auto;
+    margin-bottom: 50px;
   }
   .slider-portfolio li {
     position: absolute;
@@ -403,6 +404,7 @@ ul.slider-portfolio{
     ul.slider-portfolio{
         width: 100%;
         margin: auto;
+        margin-bottom: 20px;
     }
     .slider-portfolio li img{
         width: 100%;
@@ -504,6 +506,128 @@ ul.slider-poemas{
         object-fit: contain;
     }
 }
+/*Contacto General*/
+.seccion-contacto{
+    background-image: url(/imagenes/FondoHelecho.jpg);
+    background-size: contain;
+}
+.contact_form{  
+    width: 460px;
+    margin: auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;   
+    background-image: linear-gradient(dimgrey, mediumaquamarine);
+  }
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: mediumaquamarine; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: mediumaquamarine; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  label{
+    display: block; 
+    float: center;  
+  }
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: mediumturquoise; 
+    border-color:mediumturquoise; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  span{
+    color:mediumturquoise; 
+  }
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  #enviar{
+      color: black;
+      font-weight: bolder;
+  }
+  .colocar_nombre{
+      font-weight: bolder;
+      text-decoration: underline solid 2px;
+  }
+  .colocar_email{
+      font-weight: bolder;
+      text-decoration: underline solid 2px;
+  }
+  .colocar_mensaje{
+      font-weight: bolder;
+      text-decoration: underline solid 2px;
+  }
+  .h2-contacto{
+    color: #0e0e0e;
+    text-decoration: underline double black;
+    padding-bottom: 10px;
+  }
+  .h3-contacto{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;
+    text-decoration: underline double black;   
+  }
+  .formulario-contacto p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid blue;
+  }
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid blue;
+  }
+  /*Contacto Moviles*/
+  @media only screen and (max-width: 480px){
+      .contact_form{
+          width: 100%;
+          padding:auto;
+          object-fit: contain;  
+      } 
+      .formulario-contacto{
+          width: auto;
+          display: flex;
+          flex-wrap: wrap;
+  }
+ 
 
 
 
